@@ -59,7 +59,8 @@ public class StepImplementation extends BaseModel {
 
     /** Arama Alanında İstenilen Alana Giriş Sağlanmıştır*/
     @Step("<kelimesi> ile arama gerçekleştir")
-    public void findStock(String findWord) {
+    public void findStock(String findWord)
+    {
         driver.findElementByAccessibilityId("Sembol Ara").click();
         driver.findElement(By.className("android.widget.EditText")).sendKeys(findWord);
         driver.findElement(By.xpath("//android.widget.TextView[contains(@content-desc, '" + findWord.toUpperCase() + "')]")).click();
@@ -67,7 +68,8 @@ public class StepImplementation extends BaseModel {
 
     /** Aranan Hisse Senedi Üzerindeki Haber Alanı Test Edilmiştir*/
     @Step("Haberler'e Giriş Yap")
-    public void EntryToNews() {
+    public void EntryToNews()
+    {
         driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"HABERLER\"]")).click();
     }
 

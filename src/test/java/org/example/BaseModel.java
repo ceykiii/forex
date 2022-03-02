@@ -21,7 +21,8 @@ import java.util.concurrent.TimeUnit;
 public class BaseModel {
     public static AndroidDriver driver;
     @BeforeScenario
-    public void setUp() throws MalformedURLException {
+    public void setUp() throws MalformedURLException
+    {
         URL appiumServerURL = null;
         appiumServerURL = new URL("http:127.0.0.1:4723/wd/hub");
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
@@ -38,7 +39,8 @@ public class BaseModel {
     }
 
     @AfterScenario
-    public void tearDown() throws Exception {
+    public void tearDown() throws Exception
+    {
         driver.quit();
     }
 
