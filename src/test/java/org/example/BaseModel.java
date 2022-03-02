@@ -14,6 +14,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Appium BaseModel üzerinde Cihaz Tanımlamaları Yapılmıştır İmplatasyonu tamamında driver nesnesi  üzerinden
+ * işlemler bağlamıştır
+ * */
 public class BaseModel {
     public static AndroidDriver driver;
     @BeforeScenario

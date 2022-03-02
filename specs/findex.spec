@@ -12,7 +12,7 @@ Test
 * Hamburger Menuye Tıkla
 * Piyasalara Tıkla
 * Piyasa Listelerini Kontrol Et
-* Bist 100'e Giriş Yap
+* "Bist 100"'e Giriş Yap
 * "GARAN" ile arama gerçekleştir
 * Haberler'e Giriş Yap
 * İlk Habere Giriş Yap
